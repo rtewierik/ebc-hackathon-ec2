@@ -11,3 +11,4 @@ cd vc-templates
 curl -d "@VerifiableEvent.json" -X POST localhost:8080/issuer-api/default/config/templates/VerifiableEvent
 curl -d "@VerifiableEmployment.json" -X POST localhost:8080/issuer-api/default/config/templates/VerifiableEmployment' | sudo tee /var/lib/cloud/scripts/per-boot/boot.sh
 sudo chmod a+rx /var/lib/cloud/scripts/per-boot/boot.sh
+sudo /var/lib/cloud/scripts/per-boot/boot.sh
