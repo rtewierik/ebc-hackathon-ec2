@@ -10,6 +10,7 @@ services:
       EXTERNAL_HOSTNAME: walletkit
     volumes:
       - ./walletkit:/waltid-walletkit/data-root # data store volume incl. config files.
+      - ./vc-templates:/vc-templates
     ports:
       - 8080:8080
   api:
